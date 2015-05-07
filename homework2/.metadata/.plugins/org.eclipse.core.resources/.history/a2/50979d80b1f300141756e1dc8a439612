@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class task2{
+
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in,"UTF-8");
+
+        System.out.println("Please enter an integer 1:");
+        int num1 = input.nextInt();
+        System.out.println("Please enter an integer 2:");
+        int num2 = input.nextInt();
+        System.out.println("Please enter an integer 3:");
+        int num3 = input.nextInt();
+    }
+}
+
+
+    

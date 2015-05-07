@@ -1,0 +1,34 @@
+package homework1;
+
+import java.util.Scanner;
+
+public class task3 {
+	
+	public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in, "UTF-8");
+
+        System.out.println("Name: ");
+        String Name = input.nextLine();
+        
+        System.out.println("Surname: ");
+        String Surname = input.nextLine();
+        
+        System.out.println("??????: ");
+        byte year = input.nextByte();
+        
+        System.out.println("EGN: ");
+        int egn1 = input.nextInt();
+        
+        System.out.println("tel: ");
+        int tel = input.nextInt();
+
+    
+        System.out.println("Entered name: " + Name);
+        System.out.println("Entered Surname: " + Surname);
+        System.out.println("Entered year: " + year);
+        System.out.println("Entered EGN: " + egn1);
+        System.out.println("Entered tel: " + tel);
+	}
+
+}
