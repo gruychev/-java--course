@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class task3 {
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in,"UTF-8");
+
+	    System.out.println("Please enter n:");
+	     int n = input.nextInt();
+		
+
+
+
+
+System.out.println("Enter few integers , for end enter 0");
+int smallest = 1;
+int largest = 2;
+while (input.hasNext()) {
+if (n ==0) { break; }
+if ( n < smallest )
+{ smallest = n;}
+if ( n > largest )
+{ largest = n;}
+}
+System.out.println("smallest" + smallest);
+System.out.println("largest" + largest);
+}
+}

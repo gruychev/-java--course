@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class task3 {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in,"UTF-8");
+
+	    System.out.println("Please enter n:");
+	     int n = input.nextInt();
+		
+		for (int number = 0; number < n; number++) {
+		    System.out.print(number + " ");
+		}
+		System.out.println();
+		 
+		long factorial = 1;
+		for (int i = 1; i <= n; i++) {
+		    factorial *= i;
+		}
+		System.out.println(n + "! = " + factorial);
+    	}
+
+}
