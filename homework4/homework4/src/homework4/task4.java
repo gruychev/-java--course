@@ -1,0 +1,27 @@
+package homework4;
+
+import java.util.Scanner;
+
+public class task4 {
+	
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in,"UTF-8");
+		
+		int[] Array = {1 ,3,5,6,7,10};
+		
+		System.out.println("Please enter n:");
+		   
+	     int n = input.nextInt();
+	     
+	     for (int i = 0; i < 6; i++) {
+	    	 if(Array[i] == n){
+	    		 System.out.print(i+1);
+	    		 
+	    	 }
+	   	 }
+	     
+		
+		
+	}
+
+}

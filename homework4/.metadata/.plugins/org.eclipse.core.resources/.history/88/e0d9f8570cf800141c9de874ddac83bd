@@ -1,0 +1,26 @@
+package homework4;
+
+import java.util.Scanner;
+public class task2 {
+	 
+    public static void main(String[] args){
+        System.out.print("Number n");
+        
+        Scanner input = new Scanner(System.in,"UTF-8");
+        
+        int n = input.nextInt();
+        int[] arr = new int[n];
+        arr[0] = 0;
+        arr[1] = 1;
+        //пресмята следващия член като сума на предишните два
+        for(int i = 2; i < n; i++){
+            arr[i] = arr[i-2]+arr[i-1];
+        }
+ 
+        //изпечатва генерирания масив с числата на Фибоначи
+        for(int j = 0; j < n; j++){
+            System.out.print(arr[j]+" ");
+        }
+    }
+ 
+}

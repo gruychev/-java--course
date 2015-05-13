@@ -1,0 +1,26 @@
+package homework4;
+
+import java.util.Scanner;
+public class task5 {
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in,"UTF-8");
+
+	    System.out.println("Please enter n:");
+	   
+		
+	     int n = input.nextInt();
+	     int[] array = new int[n];
+	 	
+	     for (int i = 4; i < array.length; i++) {
+		    array[i] = i + 1;
+		}
+		
+		for (int i = 4; i < array.length; i++) {
+			System.out.println("array[" + i + "] = " + array[i]);
+		}
+
+	     
+	     
+	}
+}
