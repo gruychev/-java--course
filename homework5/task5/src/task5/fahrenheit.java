@@ -1,0 +1,25 @@
+package task5;
+
+public class fahrenheit {
+	  double Fa;
+	
+	  
+	  public fahrenheit(){
+			this.Fa = 0;
+		}
+		
+		public fahrenheit(double Fa){
+			this.Fa = Fa;
+		}
+		
+		public double calculate(){
+			double  far = this.Fa * 1.8+32;
+			return far;
+		}
+		
+
+		
+
+
+}
+

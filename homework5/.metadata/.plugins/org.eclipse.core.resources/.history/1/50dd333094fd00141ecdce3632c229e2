@@ -1,0 +1,11 @@
+package task5;
+
+public class main {
+	public static void main(String[] args) {
+		
+		fahrenheit fa1 = new fahrenheit(2.1);
+		System.out.println( calculate() + "far");
+	
+	}
+
+}
