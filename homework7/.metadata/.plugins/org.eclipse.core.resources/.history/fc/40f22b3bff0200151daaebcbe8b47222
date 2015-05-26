@@ -1,0 +1,29 @@
+package homework7;
+
+public class task5 {
+	public static void main(String[] args) {
+		
+		
+		maxNumber(6,8)
+	}
+		public static void maxNumber(int number1,int number2){
+			
+		}
+		
+		for(int i=10;i<100;i++){
+			if(i % 11 == 0){
+				System.out.println(i);
+
+			
+		}
+		}
+			
+			for(int i=10;i<1000;i++){
+				if(i % 101 == 0){
+					System.out.println(i);
+			
+			}
+		}
+}	
+		
+

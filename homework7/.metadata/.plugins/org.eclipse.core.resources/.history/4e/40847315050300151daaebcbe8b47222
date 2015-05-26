@@ -1,0 +1,23 @@
+package homework7;
+
+import java.util.Scanner;
+
+public class task6 {
+	
+public static void main(String[] args) {
+	Scanner input = new Scanner(System.in,"UTF-8");
+	
+	 doEven(5);
+	 doEven(6);
+}
+
+public static void doEven(int number1){
+
+		if(number1 % 2== 0){
+			System.out.println("even");	
+		}
+		else{
+			System.out.println("uneven");		
+		}
+		}
+}

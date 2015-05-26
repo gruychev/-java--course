@@ -1,0 +1,26 @@
+package homework8;
+
+public class task3 {
+	  public static void main(String[] args) {
+	
+	   String quote = "The main subject in the \"Intro Java\"" +
+
+" book is Java for Java newbies. Java Java";
+
+int index = quote.indexOf("Java");
+
+int t=0;
+
+while(index != -1) {
+
+System.out.println("Java found on index: " + index);
+
+index = quote.indexOf("Java", index + 1);
+t=t+1;
+		
+
+}
+System.out.println(t);
+
+}
+}

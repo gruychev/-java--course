@@ -1,0 +1,32 @@
+package homework7;
+
+import java.util.Scanner;
+
+public class task6 {
+	
+public static void main(String[] args) {
+	Scanner input = new Scanner(System.in,"UTF-8");
+	
+    
+    
+    maxNumber(7,9);
+    
+    maxNumber(2,3);
+}
+
+public static void maxNumber(int number1,int number2){
+	   int max=number1;
+	   if(number2>number1){
+		   max=number2;
+		 
+	   }
+	   
+	  
+	   System.out.println("Maximal number: " + max);
+		   
+	
+
+}
+
+
+}

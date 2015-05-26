@@ -1,0 +1,24 @@
+package homework7;
+
+import java.util.Scanner;
+
+public class task6 {
+	
+public static void main(String[] args) {
+	Scanner input = new Scanner(System.in,"UTF-8");
+	
+    
+	
+     doSimetric(5);
+}
+
+public static void doSimetric(int number1){
+
+		if(number1 % 2== 0){
+			System.out.println("chetno");	
+		}
+		else{
+			System.out.println("ne chetno");		
+		}
+		}
+}

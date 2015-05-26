@@ -1,0 +1,22 @@
+package homework8;
+
+public class task3 {
+	  public static void main(String[] args) {
+	
+	   String text = "The main subject in the book is Java for Java newbies. Java Java";
+
+int index = text.indexOf("Java");
+
+int t=0;
+
+while(index != -1) {
+
+index = text.indexOf("Java", index + 1);
+t=t+1;
+		
+
+}
+System.out.println(t);
+
+}
+}
