@@ -1,0 +1,49 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Set;
+import java.util.TreeMap;
+
+import java.util.Scanner;
+public class task3 {
+	
+	public static void main(String[] args) {
+		
+		 ArrayList<String> people = new ArrayList<String>();
+		 Scanner input = new Scanner(System.in,"UTF-8");
+		 for(int i = 0; i < 5; i++){
+			 System.out.println("Please enter word:");
+		      String ss1 = input.nextLine();
+		 
+		  people.add(ss1);
+		 }
+		HashMap<String, Integer> wordsCount = new HashMap<String, Integer>();
+		for (String word : people) {
+			Integer count = wordsCount.get(word);
+			if (count == null) {
+				count = 0; 
+			}
+			wordsCount.put(word, count + 1);
+		}
+		
+		Set<String> wordKeys = wordsCount.keySet();
+		
+		
+		
+		for (String word : wordKeys) {
+			int count = wordsCount.get(word);
+			if(count ==2){
+			System.out.println("чифт");
+			}
+			else if(count ==3){
+				System.out.println("сет");
+		}
+			else if(count ==4){
+				System.out.println("каре");
+		}
+			
+			}
+			
+		
+	}
+}
+
