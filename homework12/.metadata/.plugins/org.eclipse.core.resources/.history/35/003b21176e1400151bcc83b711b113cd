@@ -1,0 +1,50 @@
+package homework12;
+
+public class task2 {
+
+}
+public class Quicksort {
+	static void qsort(int array[]){
+		qs(array, 0, array.length-1);
+	}
+private static void qs(int array[], int left, int right)
+{
+	int i,j;
+	int x,y;
+	i=left; j = right;
+	x=array[(left+right)/2];
+	do{
+		while ((array[i]<x)&&(i<right)) i++;
+		while ((x<array[i])&&(j>left)) j--;
+		if(i<=j){
+			y=array[i];
+			array[i]=array[j];
+			array[j]=y;
+			i++;
+			j--;
+			
+		}
+	}while(i<=j);
+	if(left<j) qs(array, left, j);
+	if(i<right) qs(array, i, right);
+	
+}
+}
+
+
+class qsdemo{
+	public static void main (String args[]){
+		int a[] = {2, 6, 9, 3, 7, 20, 10};
+		int i;
+		for (i=0; i<a.length; i++)
+			System.out.print(a[i]);
+		System.out.println();
+		
+		Quicksort.qsort(a);
+		System.out.print("sort:");
+		for(i=0; i<a.length; i++)
+			System.out.print(a[i]);
+		
+		
+	}
+}

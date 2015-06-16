@@ -23,6 +23,7 @@ public static void maxNumber(int number1,int number2){
 	   int max=number1;
 	   if(number2>number1){
 		   max=number2;
+		   return max;
 		  
 	   }
 	   

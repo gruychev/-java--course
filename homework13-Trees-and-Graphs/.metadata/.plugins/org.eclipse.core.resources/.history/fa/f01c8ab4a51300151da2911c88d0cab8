@@ -1,0 +1,47 @@
+package treehomework;
+
+import java.util.LinkedList;
+import java.util.List;
+
+
+public class TreeNode<T> {
+
+    T data;
+    TreeNode<T> parent;
+    List<TreeNode<T>> children1;
+    List<TreeNode<T>> children2;
+
+    public TreeNode(T data) {
+        this.data = data;
+        this.children1 = new LinkedList<TreeNode<T>>();
+        this.children2 = new LinkedList<TreeNode<T>>();
+    }
+
+    public TreeNode<T> addChild(T child) {
+    	TreeNode<T> childNode = new TreeNode<T>(child);
+        childNode.parent = this;
+        this.children1.add(childNode);
+        this.children2.add(childNode);
+        return childNode;
+    }
+    public int getChildrenCount() {
+    	return this.children1.size();
+    	}
+    public void print(TreeNode<T> node, int depth){
+    	for (int i = 0; i < depth; i++) {
+    	  	System.out.print("\t");	
+		}
+    	System.out.println(node.data);
+    	depth++;
+    	System.out.print(depth);	
+
+    	for (int i = 0; i < node.children1.size(); i++) {
+			print(node.children1.get(i), depth);
+			
+		}
+    	for (int i = 0; i < node.children2.size(); i++) {
+			print(node.children2.get(i), depth);
+    	}
+			
+    }
+}

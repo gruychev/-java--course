@@ -1,0 +1,10 @@
+package testgraph;
+
+public class Main {
+
+	public static void main(String[] args) {
+		graph fa1 = new graph(5);
+	}
+	}
+
+

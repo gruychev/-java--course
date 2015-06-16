@@ -1,0 +1,38 @@
+public class graph {
+
+    public static class Node implements DirectedGraphNode {
+        public final String x;
+        public ArrayList<DirectedGraphNode> antec = new ArrayList<DirectedGraphNode>(); // immediate antecesors
+        public Node(String x) {this.x= x;}
+        public Collection<DirectedGraphNode> getPredecessors() {
+            return antec;
+        }
+        public String toString() {
+            return x;
+        }
+    }
+
+    public static void main(String[] args) {
+        List<DirectedGraphNode> graph = new ArrayList<DirectedGraphNode>();
+        Node na = new Node("A");
+        Node nb = new Node("B");
+        Node nc = new Node("C");
+        Node nd = new Node("D");
+        Node ne = new Node("E");
+        nc.antec.add(na);
+        nc.antec.add(nb);
+        nd.antec.add(ne);
+        ne.antec.add(na);
+        na.antec.add(nd);
+
+        graph.add(nc);
+        graph.add(na);
+        graph.add(nb);
+        graph.add(ne);
+        graph.add(nd);
+
+        TopologicalSorter ts = new TopologicalSorter(graph, false);
+        ts.sort();
+        ts.showResult();
+    }
+ }

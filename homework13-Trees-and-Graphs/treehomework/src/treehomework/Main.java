@@ -1,0 +1,29 @@
+package treehomework;
+
+
+
+public class Main {
+
+	public static void main(String[] args) {
+		TreeNode<String> root = new TreeNode<String>("root");
+		{
+			TreeNode<String> node0 = root.addChild("node0");
+			TreeNode<String> node1 = root.addChild("node1");
+			TreeNode<String> node2 = root.addChild("node2");
+		    {
+		    	TreeNode<String> node20 = node2.addChild(null);
+		    	TreeNode<String> node21 = node2.addChild("node21");
+		        {
+		        	TreeNode<String> node210 = node20.addChild("node210");
+		        	TreeNode<String> node220 = node21.addChild("node220");
+		        	TreeNode<String> node2210 = node220.addChild("node2210");
+		        }
+		    }
+		}
+		
+		root.print(root , 0);
+		root.getChildrenCount();
+
+	}
+
+}

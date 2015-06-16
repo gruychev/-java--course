@@ -8,9 +8,9 @@ public class task2 {
 		System.out.println("Name: ");
         String name = input.nextLine();
 
-        doName(name);
+        //doName(name);
         
-        public static string doName(String name){
+        //public static string doName(String name){
         	
      
         }
@@ -18,5 +18,5 @@ public class task2 {
         
 	}
 
-}
+//}
 
